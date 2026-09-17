@@ -1,0 +1,15 @@
+.aurel-launch{bottom:96px;right:28px}
+
+.admin-session{display:flex;gap:18px;align-items:center}
+.admin-security{position:fixed;right:28px;top:70px;z-index:60;width:min(420px,calc(100vw - 32px));padding:24px;background:var(--paper);border:1px solid var(--border);box-shadow:0 18px 55px #0007}
+.admin-security h2{font-size:30px;margin:6px 0 8px}
+.admin-security form{display:grid;gap:10px;margin-top:18px}
+.admin-security input{background:var(--background);border:1px solid var(--border);color:var(--foreground);padding:12px;font-size:15px;border-radius:4px}
+.admin-security label{font-size:13px;color:var(--muted-foreground)}
+.admin-security-actions{display:flex;align-items:center;gap:18px;margin-top:8px}
+
+@media(max-width:700px){
+  .aurel-launch{right:14px;bottom:104px}
+  .admin-session{right:16px}
+  .admin-security{right:16px;top:64px}
+}
