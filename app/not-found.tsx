@@ -1,0 +1,1 @@
+export default function NotFound(){return <main className="unavailable"><div className="eyebrow">404 / THE ARCHIVE</div><h1>This page is unavailable.</h1><p>It may have been moved, removed, or unpublished.</p><a className="button" href="/">Return to portfolio</a></main>}
