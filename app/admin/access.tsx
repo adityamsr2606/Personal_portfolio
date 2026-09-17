@@ -47,7 +47,7 @@ export default function AdminAccess() {
     try{
       if(newPassword.length<8) throw Error('New password must contain at least 8 characters.');
       if(newPassword!==confirmPassword) throw Error('The new passwords do not match.');
-      const {error}=await browserDatabase().auth.updateUser({password:newPassword,currentPassword});
+      const {error}=await browserDatabase().auth.updateUser({password:newPassword,current_password:currentPassword});
       if(error) throw error;
       setCurrentPassword('');setNewPassword('');setConfirmPassword('');
       setSecurityMessage('Password changed successfully.');
