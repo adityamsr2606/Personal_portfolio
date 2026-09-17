@@ -1,8 +1,8 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": "nextjs",
-  "installCommand": "pnpm install --frozen-lockfile",
-  "buildCommand": "next build --webpack",
+  "installCommand": "corepack enable && corepack prepare pnpm@11.25.0 --activate && pnpm install --frozen-lockfile",
+  "buildCommand": "pnpm exec next build --webpack",
   "outputDirectory": ".next",
   "regions": ["bom1"],
   "functions": {"app/api/aurel/route.ts": {"maxDuration": 30}},
